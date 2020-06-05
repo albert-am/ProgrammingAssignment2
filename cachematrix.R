@@ -1,4 +1,6 @@
-##An invertible matrix is generated and passed.Careful to pass invertible matrices
+##An invertible matrix is generated and passed.Careful to pass invertible 
+##matrices.The function contains functions to set and get the passed
+##matrix.Also the inverse can also be found out.
 
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
@@ -23,7 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## To draw from the cache
+## This function checks whether the inverted matrix is in the cache.If it is in
+##cach.If it is in the canhe computation can be avoided. Else it is calculated
+##using the solve() function.
 
 cacheSolve <- function(x, ...) {
   m<-x$getinverse()
